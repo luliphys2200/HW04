@@ -33,9 +33,8 @@ long fibonacci(int n)
     double c = 1/sqrt(5);
     double g1 = (1 + sqrt(5))/2;
     double g2 = (1 - sqrt(5))/2;
-    return ceil(c*pow(g1, n) - c*pow(g2, n));
+    return lround(c*pow(g1, n) - c*pow(g2, n));
 }
-
 
 
 
