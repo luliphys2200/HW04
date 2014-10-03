@@ -2,10 +2,17 @@
  * Calculate the area of a triangle
  */
  
- #include <math.h>
- #include "geom.h"
+#include <math.h>
+#include "geom.h"
+
+double distance(struct point2d, struct point2d);
+double perimeter(struct triangle);
  
- double area(struct triangle t)
- {
-     return fabs(0.5*( (t.c.x - t.a.x)*(t.b.y - t.a.y) + (t.c.y - t.a.y)*(t.b.x - t.a.x))) ;
- }
+double area(struct triangle t)
+{
+    double ab = distance(t.a, t.b);
+    double ac = distance(t.a, t.c);
+    double bc = distance(t.b, t.c);
+    double p = perimeter(t)/2;
+    return sqrt(p*(p - ab)*(p - ac)*(p - bc));
+}
