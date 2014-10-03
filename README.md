@@ -1,4 +1,4 @@
-phys2200
+Homework 4
 ========
 
-Homeworks for phys2200
+Calculating the nth fibonacci number using recursion and using the formula.
