@@ -1,3 +1,3 @@
 ## Homework 05
 
-This project includes a program that calculates the radius of a circle inscribed in a triangle given the vertices of the triangle.
+This program calculates the radius of a circle inscribed in a triangle with vertices (2, 2), (-2, 1), and (0, -3).
