@@ -17,7 +17,10 @@ int main(void)
     point c = {0, -3};
     triangle t = {a, b, c};
     double r = 2*area(t)/perimeter(t);
+    
     printf("The radius is %f\n", r);
+    
+    return 0;
 }
 
 
